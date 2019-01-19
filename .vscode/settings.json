@@ -1,0 +1,9 @@
+{
+  // Start Enable Prettier to format on save
+  "editor.formatOnSave": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
+  // End Enable Prettier to format on save
+}
