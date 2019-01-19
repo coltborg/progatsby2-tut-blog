@@ -46,6 +46,7 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-netlify', // Make sure to pu last in array
   ],
 }
