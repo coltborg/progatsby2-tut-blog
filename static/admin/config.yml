@@ -8,6 +8,8 @@ public_folder: /img
 
 publish_mode: editorial_workflow
 
+display_url: https://wonderful-bassi-206253.netlify.com
+
 collections:
   - name: "team"
     label: "Team"
