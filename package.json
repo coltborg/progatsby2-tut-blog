@@ -40,7 +40,8 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "prettier": "^1.15.2",
+    "tailwindcss": "^0.7.3"
   },
   "repository": {
     "type": "git",
