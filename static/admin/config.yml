@@ -39,8 +39,11 @@ collections:
         name: "about"
         file: "src/custom/about.yml"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: title, widget: hidden}
           - {label: Intro, name: intro, widget: markdown}
+          - label: "Manual PDF"
+            name: "manual_pdf"
+            widget: "file"
           - label: Team
             name: team
             widget: list
