@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
 import Img from 'gatsby-image'
 import { Spring } from 'react-spring'
 import { StaticQuery, graphql } from 'gatsby'
@@ -39,6 +40,9 @@ const Layout = ({ children, location }) => (
     `}
     render={data => (
       <>
+        <Helmet>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+        </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Spring
           from={{ height: location.pathname === '/' ? 100 : 200 }}
