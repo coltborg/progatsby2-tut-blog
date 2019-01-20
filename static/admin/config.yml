@@ -9,6 +9,7 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 display_url: https://wonderful-bassi-206253.netlify.com
+logo_url: https://wonderful-bassi-206253.netlify.com//static/logo-7665f742d9402c726ad0cd313e098ef8.svg
 
 collections:
   - name: "team"
