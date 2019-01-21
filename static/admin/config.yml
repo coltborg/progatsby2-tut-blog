@@ -29,5 +29,5 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "hidden", default: "Contact"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Email", name: "email", widget: "string", pattern: ['/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', "Must have a valid email", required: false]
+          - {label: "Email", name: "email", widget: "string", required: false, pattern: ['/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', "Must have a valid email", ]
 }
