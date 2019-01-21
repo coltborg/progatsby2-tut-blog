@@ -27,7 +27,7 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About The Team"
+      - label: "About"
         name: "about"
         file: "src/custom/about.yml"
         fields:
