@@ -2,21 +2,17 @@ backend:
   name: git-gateway
   branch: master
   repo: coltborg/progatsby2-tut-blog
-
 media_folder: static/img
 public_folder: /img
-
 publish_mode: editorial_workflow
-
 display_url: https://wonderful-bassi-206253.netlify.com
 logo_url: https://wonderful-bassi-206253.netlify.com//static/logo-7665f742d9402c726ad0cd313e098ef8.svg
-
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "src/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}-{{year}}-{{month}}-{{day}}" # Filename template, e.g., title-YYYY-MM-DD.md
+    slug: "{{slug}}" # Filename template, e.g., title-YYYY-MM-DD.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
@@ -31,15 +27,6 @@ collections:
         name: "about"
         file: "src/custom/about.md"
         fields:
-          - {label: Title, name: title, widget: hidden}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: "Manual PDF"
-            name: "manual_pdf"
-            widget: "file"
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          - {label: "Title", name: "title", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Resume", name: "resume", widget: "file", required: false}
