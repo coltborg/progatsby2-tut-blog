@@ -12,14 +12,6 @@ display_url: https://wonderful-bassi-206253.netlify.com
 logo_url: https://wonderful-bassi-206253.netlify.com//static/logo-7665f742d9402c726ad0cd313e098ef8.svg
 
 collections:
-  - name: "team"
-    label: "Team"
-    folder: "src/team"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Team Member", name: "title", widget: "string" }
-      - { label: "Bio", name: "bio", widget: "markdown" }
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "src/blog" # The path to the folder where the documents are stored
