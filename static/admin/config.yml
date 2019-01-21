@@ -23,10 +23,11 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About"
-        name: "about"
-        file: "src/custom/about.md"
+      - label: "Contact"
+        name: "contact"
+        file: "src/custom/contact.md"
         fields:
-          - {label: "Title", name: "title", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Contact"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Resume", name: "resume", widget: "file", required: false}
+          - {label: "Email", name: "email", widget: "string", pattern: ['/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', "Must have a valid email", required: false]
+}
