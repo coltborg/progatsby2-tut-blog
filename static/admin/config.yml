@@ -12,7 +12,7 @@ collections:
     label: "Blog" # Used in the UI
     folder: "src/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., title-YYYY-MM-DD.md
+    slug: "{{slug}}" # Filename template, e.g., title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
@@ -25,6 +25,7 @@ collections:
     files:
       - label: "Contact"
         name: "contact"
+        slug: "{{slug}}" # Filename template, e.g., title.md
         file: "src/custom/contact.md"
         fields:
           - {label: "Body", name: "body", widget: "markdown"}
