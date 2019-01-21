@@ -29,7 +29,7 @@ collections:
     files:
       - label: "About"
         name: "about"
-        file: "src/custom/about.yml"
+        file: "src/custom/about.md"
         fields:
           - {label: Title, name: title, widget: hidden}
           - {label: Intro, name: intro, widget: markdown}
